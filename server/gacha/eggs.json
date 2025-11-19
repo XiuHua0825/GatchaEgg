@@ -6,16 +6,16 @@
     "name": "30元砸蛋"
   },
   {
-    "id": "egg50",
-    "price": 50,
-    "pool": "pool50",
-    "name": "50元砸蛋"
+    "id": "egg90",
+    "price": 90,
+    "pool": "pool90",
+    "name": "90元砸蛋"
   },
   {
-    "id": "egg100",
-    "price": 100,
-    "pool": "pool100",
-    "name": "100元砸蛋"
+    "id": "egg199",
+    "price": 199,
+    "pool": "pool199",
+    "name": "199元砸蛋"
   }
 ]
 

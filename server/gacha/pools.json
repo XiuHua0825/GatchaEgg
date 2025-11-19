@@ -61,108 +61,276 @@
       "prob": 0.098,
       "price": 120,
       "image": "/items/gold.png",
-      "isJackpot": false
+      "isJackpot": true
     },
     {
       "name": "棉花糖",
       "prob": 0.098,
       "price": 120,
       "image": "/items/gold.png",
-      "isJackpot": false
+      "isJackpot": true
     },
     {
       "name": "秋收花喵",
       "prob": 0.049,
       "price": 300,
       "image": "/items/gold.png",
-      "isJackpot": false
+      "isJackpot": true
     },
     {
       "name": "秋日貓貓",
       "prob": 0.049,
       "price": 300,
       "image": "/items/gold.png",
-      "isJackpot": false
+      "isJackpot": true
     },
     {
       "name": "貓貓翹翹板",
       "prob": 0.049,
       "price": 300,
       "image": "/items/gold.png",
-      "isJackpot": false
+      "isJackpot": true
     },
     {
       "name": "雪兔精靈",
       "prob": 0.049,
       "price": 480,
       "image": "/items/gold.png",
-      "isJackpot": false
+      "isJackpot": true
     },
     {
       "name": "活力少女",
       "prob": 0.049,
       "price": 520,
       "image": "/items/gold.png",
-      "isJackpot": false
+      "isJackpot": true
     }
   ],
-  "pool50": [
+  "pool90": [
     {
-      "name": "普通玩具",
-      "prob": 0.45,
-      "price": 30,
+      "name": "稻草帽",
+      "prob": 0.877,
+      "price": 10,
       "image": "/items/toy.png",
       "isJackpot": false
     },
     {
-      "name": "高級飼料",
-      "prob": 0.30,
-      "price": 60,
+      "name": "星辰流星",
+      "prob": 0.1447,
+      "price": 20,
       "image": "/items/food.png",
       "isJackpot": false
     },
     {
-      "name": "貓爬架",
-      "prob": 0.17,
-      "price": 100,
+      "name": "小彩虹橋",
+      "prob": 0.1535,
+      "price": 50,
       "image": "/items/tower.png",
       "isJackpot": false
     },
     {
-      "name": "鑽石項圈（大獎）",
-      "prob": 0.08,
-      "price": 500,
+      "name": "甜心小貓",
+      "prob": 0.1763,
+      "price": 60,
+      "image": "/items/diamond.png",
+      "isJackpot": false
+    },
+    {
+      "name": "小熊巧克力",
+      "prob": 0.789,
+      "price": 90,
+      "image": "/items/diamond.png",
+      "isJackpot": false
+    },
+    {
+      "name": "舉栗",
+      "prob": 0.789,
+      "price": 90,
+      "image": "/items/diamond.png",
+      "isJackpot": false
+    },
+    {
+      "name": "書本",
+      "prob": 0.657,
+      "price": 120,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "愛之花禮",
+      "prob": 0.657,
+      "price": 120,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "吟遊詩人",
+      "prob": 0.526,
+      "price": 150,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "星願兔侶",
+      "prob": 0.438,
+      "price": 220,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "書中黃金",
+      "prob": 0.219,
+      "price": 250,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "甜心愛戀",
+      "prob": 0.087,
+      "price": 300,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "寵溺喵喵",
+      "prob": 0.087,
+      "price": 520,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "墜入愛河",
+      "prob": 0.043,
+      "price": 520,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "戀戀星河",
+      "prob": 0.043,
+      "price": 1680,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "冬雪密語",
+      "prob": 0.043,
+      "price": 1680,
       "image": "/items/diamond.png",
       "isJackpot": true
     }
   ],
-  "pool100": [
+  "pool199": [
     {
-      "name": "豪華貓窩",
-      "prob": 0.40,
-      "price": 80,
-      "image": "/items/house.png",
+      "name": "羽你情牽",
+      "prob": 0.1865,
+      "price": 20,
+      "image": "/items/toy.png",
       "isJackpot": false
     },
     {
-      "name": "自動餵食器",
-      "prob": 0.30,
-      "price": 150,
-      "image": "/items/feeder.png",
+      "name": "小貓花花",
+      "prob": 0.1748,
+      "price": 30,
+      "image": "/items/food.png",
       "isJackpot": false
     },
     {
-      "name": "智能貓砂盆",
-      "prob": 0.20,
+      "name": "小兔花茶",
+      "prob": 0.1573,
+      "price": 60,
+      "image": "/items/tower.png",
+      "isJackpot": false
+    },
+    {
+      "name": "月亮船",
+      "prob": 0.1328,
+      "price": 90,
+      "image": "/items/diamond.png",
+      "isJackpot": false
+    },
+    {
+      "name": "霜鷺秋韻",
+      "prob": 0.1293,
+      "price": 120,
+      "image": "/items/diamond.png",
+      "isJackpot": false
+    },
+    {
+      "name": "愛心禮盒",
+      "prob": 0.1293,
+      "price": 210,
+      "image": "/items/diamond.png",
+      "isJackpot": false
+    },
+    {
+      "name": "秋日之吻",
+      "prob": 0.384,
       "price": 250,
-      "image": "/items/litter.png",
+      "image": "/items/diamond.png",
       "isJackpot": false
     },
     {
-      "name": "傳說貓城堡（大獎）",
-      "prob": 0.10,
-      "price": 1000,
-      "image": "/items/castle.png",
+      "name": "戀戀流星錘",
+      "prob": 0.174,
+      "price": 300,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "相伴同遊",
+      "prob": 0.069,
+      "price": 520,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "糖果精靈",
+      "prob": 0.069,
+      "price": 520,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "黃昏戀歌",
+      "prob": 0.034,
+      "price": 660,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "派對甜心",
+      "prob": 0.034,
+      "price": 990,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "遊樂園情侶",
+      "prob": 0.034,
+      "price": 1314,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "繁花夜夢",
+      "prob": 0.034,
+      "price": 6600,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "喵享咖啡館",
+      "prob": 0.034,
+      "price": 13140,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    },
+    {
+      "name": "雪戀喵語",
+      "prob": 0.034,
+      "price": 13140,
+      "image": "/items/diamond.png",
       "isJackpot": true
     }
   ]
