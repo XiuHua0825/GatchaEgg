@@ -1,32 +1,109 @@
 {
   "pool30": [
     {
-      "name": "小魚乾",
-      "prob": 0.50,
-      "price": 10,
+      "name": "星之淚",
+      "prob": 0.1421,
+      "price": 3,
       "image": "/items/fish.png",
       "isJackpot": false
     },
     {
-      "name": "貓薄荷",
-      "prob": 0.30,
-      "price": 25,
+      "name": "棒棒糖",
+      "prob": 0.147,
+      "price": 6,
       "image": "/items/catnip.png",
       "isJackpot": false
     },
     {
-      "name": "貓罐頭",
-      "prob": 0.15,
-      "price": 50,
+      "name": "心動光匣",
+      "prob": 0.1519,
+      "price": 10,
       "image": "/items/can.png",
       "isJackpot": false
     },
     {
-      "name": "黃金貓罐（大獎）",
-      "prob": 0.05,
+      "name": "彩虹棒棒糖",
+      "prob": 0.1715,
+      "price": 20,
+      "image": "/items/gold.png",
+      "isJackpot": false
+    },
+    {
+      "name": "秋野仙蹤",
+      "prob": 0.2013,
+      "price": 30,
+      "image": "/items/gold.png",
+      "isJackpot": false
+    },
+    {
+      "name": "金秋示愛",
+      "prob": 0.539,
+      "price": 60,
+      "image": "/items/gold.png",
+      "isJackpot": false
+    },
+    {
+      "name": "喵喵疊疊樂",
+      "prob": 0.539,
+      "price": 60,
+      "image": "/items/gold.png",
+      "isJackpot": false
+    },
+    {
+      "name": "自然之書",
+      "prob": 0.343,
+      "price": 90,
+      "image": "/items/gold.png",
+      "isJackpot": false
+    },
+    {
+      "name": "幸運摩天輪",
+      "prob": 0.098,
+      "price": 120,
+      "image": "/items/gold.png",
+      "isJackpot": false
+    },
+    {
+      "name": "棉花糖",
+      "prob": 0.098,
+      "price": 120,
+      "image": "/items/gold.png",
+      "isJackpot": false
+    },
+    {
+      "name": "秋收花喵",
+      "prob": 0.049,
       "price": 300,
       "image": "/items/gold.png",
-      "isJackpot": true
+      "isJackpot": false
+    },
+    {
+      "name": "秋日貓貓",
+      "prob": 0.049,
+      "price": 300,
+      "image": "/items/gold.png",
+      "isJackpot": false
+    },
+    {
+      "name": "貓貓翹翹板",
+      "prob": 0.049,
+      "price": 300,
+      "image": "/items/gold.png",
+      "isJackpot": false
+    },
+    {
+      "name": "雪兔精靈",
+      "prob": 0.049,
+      "price": 480,
+      "image": "/items/gold.png",
+      "isJackpot": false
+    },
+    {
+      "name": "活力少女",
+      "prob": 0.049,
+      "price": 520,
+      "image": "/items/gold.png",
+      "isJackpot": false
     }
   ],
   "pool50": [
