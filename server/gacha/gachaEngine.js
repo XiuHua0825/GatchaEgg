@@ -15,12 +15,29 @@ const pools = JSON.parse(fs.readFileSync(path.join(__dirname, 'pools.json'), 'ut
  * @returns {Object} 抽中的品項
  */
 function drawOne(pool) {
-  const random = Math.random();
+  // 防止空陣列
+  if (!Array.isArray(pool) || pool.length === 0) return null;
+
+  // 將 prob 當作權重，先求總和，再用 random * total 來抽取
+  const totalWeight = pool.reduce((sum, item) => sum + (typeof item.prob === 'number' ? item.prob : 0), 0);
+
+  // 若總權重為 0，回傳最後一個作為保護機制
+  if (totalWeight <= 0) {
+    const lastItem = pool[pool.length - 1];
+    return {
+      name: lastItem.name,
+      price: lastItem.price,
+      image: lastItem.image,
+      isJackpot: lastItem.isJackpot || false
+    };
+  }
+
+  const random = Math.random() * totalWeight;
   let cumulative = 0;
 
   for (const item of pool) {
-    cumulative += item.prob;
-    if (random <= cumulative) {
+    cumulative += (typeof item.prob === 'number' ? item.prob : 0);
+    if (random < cumulative) {
       return {
         name: item.name,
         price: item.price,
@@ -30,7 +47,7 @@ function drawOne(pool) {
     }
   }
 
-  // 如果因為浮點數誤差沒抽到，返回最後一個
+  // 因為數值誤差導致沒命中時，返回最後一個
   const lastItem = pool[pool.length - 1];
   return {
     name: lastItem.name,
