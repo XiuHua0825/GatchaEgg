@@ -127,6 +127,48 @@
   font-weight: 700;
 }
 
+/* 獎品出現動畫 */
+.draw-item-animate {
+  animation: drawItemAppear 0.4s ease-out forwards;
+  opacity: 0;
+  transform: scale(0.3) translateY(20px);
+}
+
+@keyframes drawItemAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(20px);
+  }
+  50% {
+    transform: scale(1.1) translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* 總價值出現動畫 */
+.result-total-animate {
+  animation: totalValueAppear 0.5s ease-out forwards;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+@keyframes totalValueAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 @media (max-width: 768px) {
   .draws-grid {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));

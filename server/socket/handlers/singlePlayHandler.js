@@ -1,7 +1,7 @@
 import { performGacha, calculateTotal } from '../../gacha/gachaEngine.js';
 
-const DRAW_LIMIT = 10; // 抽卡上限
-const COOLDOWN_TIME = 5000; // CD 時間（毫秒）
+const DRAW_LIMIT = 100; // 抽卡上限
+const COOLDOWN_TIME = 3000; // CD 時間（毫秒）
 
 /**
  * 處理單人模式事件
