@@ -91,3 +91,14 @@ export function getPool(poolName) {
   return pools[poolName] || [];
 }
 
+/**
+ * 根據扭蛋 ID 取得對應獎池
+ * @param {string} eggId - 扭蛋 ID
+ * @returns {Array} 獎池內容
+ */
+export function getPoolByEggId(eggId) {
+  const egg = eggs.find(e => e.id === eggId);
+  if (!egg) return [];
+  return pools[egg.pool] || [];
+}
+

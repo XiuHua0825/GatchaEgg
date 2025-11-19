@@ -2,7 +2,7 @@ import express from 'express';
 import { createServer } from 'http';
 import cors from 'cors';
 import { initializeSocketIO } from './socket/socketManager.js';
-import { getEggs } from './gacha/gachaEngine.js';
+import { getEggs, getPoolByEggId } from './gacha/gachaEngine.js';
 
 const app = express();
 const httpServer = createServer(app);
@@ -28,6 +28,25 @@ app.get('/api/eggs', (req, res) => {
   try {
     const eggs = getEggs();
     res.json({ success: true, data: eggs });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// 取得指定扭蛋的獎池資訊
+app.get('/api/pool/:eggId', (req, res) => {
+  try {
+    const { eggId } = req.params;
+    const pool = getPoolByEggId(eggId);
+    
+    if (pool.length === 0) {
+      return res.status(404).json({ 
+        success: false, 
+        error: 'Pool not found for this egg type' 
+      });
+    }
+    
+    res.json({ success: true, data: pool });
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });
   }

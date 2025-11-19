@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useGameStore } from '../store/gameStore';
 import { useSocket } from '../hooks/useSocket';
+import PoolViewer from '../components/PoolViewer';
 import './Home.css';
 
 function Home() {
@@ -118,6 +119,10 @@ function Home() {
                 ))}
               </div>
             </div>
+          )}
+
+          {eggs.length > 0 && (
+            <PoolViewer eggs={eggs} />
           )}
         </div>
       </div>
