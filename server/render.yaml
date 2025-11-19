@@ -1,0 +1,18 @@
+# Render 部署配置文件（可選）
+# 將此文件放在專案根目錄可以實現一鍵部署
+
+services:
+  - type: web
+    name: gacha-game-backend
+    env: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN
+        value: "*"
+

@@ -1,0 +1,42 @@
+.room-joiner {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.room-joiner h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.joiner-form {
+  text-align: left;
+}
+
+.room-id-input {
+  font-family: 'Courier New', monospace;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.input-hint {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.joiner-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.joiner-actions button {
+  flex: 1;
+}
+

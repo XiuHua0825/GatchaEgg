@@ -1,0 +1,21 @@
+[
+  {
+    "id": "egg30",
+    "price": 30,
+    "pool": "pool30",
+    "name": "30元扭蛋"
+  },
+  {
+    "id": "egg50",
+    "price": 50,
+    "pool": "pool50",
+    "name": "50元扭蛋"
+  },
+  {
+    "id": "egg100",
+    "price": 100,
+    "pool": "pool100",
+    "name": "100元扭蛋"
+  }
+]
+

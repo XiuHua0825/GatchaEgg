@@ -1,0 +1,27 @@
+.room-creator {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.room-creator h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.creator-form {
+  text-align: left;
+}
+
+.creator-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.creator-actions button {
+  flex: 1;
+}
+

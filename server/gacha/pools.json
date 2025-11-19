@@ -1,0 +1,93 @@
+{
+  "pool30": [
+    {
+      "name": "小魚乾",
+      "prob": 0.50,
+      "price": 10,
+      "image": "/items/fish.png",
+      "isJackpot": false
+    },
+    {
+      "name": "貓薄荷",
+      "prob": 0.30,
+      "price": 25,
+      "image": "/items/catnip.png",
+      "isJackpot": false
+    },
+    {
+      "name": "貓罐頭",
+      "prob": 0.15,
+      "price": 50,
+      "image": "/items/can.png",
+      "isJackpot": false
+    },
+    {
+      "name": "黃金貓罐（大獎）",
+      "prob": 0.05,
+      "price": 300,
+      "image": "/items/gold.png",
+      "isJackpot": true
+    }
+  ],
+  "pool50": [
+    {
+      "name": "普通玩具",
+      "prob": 0.45,
+      "price": 30,
+      "image": "/items/toy.png",
+      "isJackpot": false
+    },
+    {
+      "name": "高級飼料",
+      "prob": 0.30,
+      "price": 60,
+      "image": "/items/food.png",
+      "isJackpot": false
+    },
+    {
+      "name": "貓爬架",
+      "prob": 0.17,
+      "price": 100,
+      "image": "/items/tower.png",
+      "isJackpot": false
+    },
+    {
+      "name": "鑽石項圈（大獎）",
+      "prob": 0.08,
+      "price": 500,
+      "image": "/items/diamond.png",
+      "isJackpot": true
+    }
+  ],
+  "pool100": [
+    {
+      "name": "豪華貓窩",
+      "prob": 0.40,
+      "price": 80,
+      "image": "/items/house.png",
+      "isJackpot": false
+    },
+    {
+      "name": "自動餵食器",
+      "prob": 0.30,
+      "price": 150,
+      "image": "/items/feeder.png",
+      "isJackpot": false
+    },
+    {
+      "name": "智能貓砂盆",
+      "prob": 0.20,
+      "price": 250,
+      "image": "/items/litter.png",
+      "isJackpot": false
+    },
+    {
+      "name": "傳說貓城堡（大獎）",
+      "prob": 0.10,
+      "price": 1000,
+      "image": "/items/castle.png",
+      "isJackpot": true
+    }
+  ]
+}
+

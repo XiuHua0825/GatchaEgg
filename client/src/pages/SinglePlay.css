@@ -1,0 +1,180 @@
+.single-play-page {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.header h1 {
+  flex: 1;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.player-info {
+  background: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #667eea;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.left-panel,
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.control-panel h2,
+.result-panel h2,
+.history-panel h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.cooldown-notice {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cooldown-notice h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.btn-draw {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 16px;
+}
+
+.history-summary {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-size: 1rem;
+}
+
+.summary-item strong {
+  color: #667eea;
+  font-size: 1.1rem;
+}
+
+.history-list {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.history-item {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.history-egg {
+  color: #667eea;
+}
+
+.history-total {
+  color: #28a745;
+  font-size: 1.1rem;
+}
+
+.history-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.history-item-badge {
+  background: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  border: 1px solid #e0e0e0;
+}
+
+.history-item-badge.jackpot {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  border-color: #ffa500;
+  font-weight: 700;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.empty-text {
+  text-align: center;
+  color: #999;
+  padding: 40px 0;
+}
+
+@media (max-width: 968px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header h1 {
+    order: -1;
+    width: 100%;
+  }
+}
+
