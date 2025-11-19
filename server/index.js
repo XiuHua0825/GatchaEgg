@@ -2,7 +2,7 @@ import express from 'express';
 import { createServer } from 'http';
 import cors from 'cors';
 import { initializeSocketIO } from './socket/socketManager.js';
-import { getEggs, getPoolByEggId } from './gacha/gachaEngine.js';
+import { getEggs, getPoolByEggId } from './gacha/engineSelector.js';
 
 const app = express();
 const httpServer = createServer(app);

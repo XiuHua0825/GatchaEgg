@@ -1,4 +1,4 @@
-import { performGacha, calculateTotal } from '../../gacha/gachaEngine.js';
+import { performGacha, calculateTotal } from '../../gacha/engineSelector.js';
 
 /**
  * 產生隨機房間號（6 碼）

@@ -1,0 +1,16 @@
+{
+  "spreadsheetId": "YOUR_SPREADSHEET_ID_HERE",
+  "sheets": {
+    "eggs": {
+      "range": "扭蛋設定!A2:D",
+      "columns": ["id", "name", "price", "pool"]
+    },
+    "pools": {
+      "pool30": "獎池30元!A2:E",
+      "pool50": "獎池50元!A2:E",
+      "pool100": "獎池100元!A2:E"
+    }
+  },
+  "poolColumns": ["name", "prob", "price", "image", "isJackpot"]
+}
+

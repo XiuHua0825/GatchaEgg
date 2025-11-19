@@ -1,4 +1,4 @@
-import { performGacha, calculateTotal } from '../../gacha/gachaEngine.js';
+import { performGacha, calculateTotal } from '../../gacha/engineSelector.js';
 
 const DRAW_LIMIT = 100; // 抽卡上限
 const COOLDOWN_TIME = 3000; // CD 時間（毫秒）
