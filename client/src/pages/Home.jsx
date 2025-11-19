@@ -13,7 +13,8 @@ function Home() {
 
   useEffect(() => {
     // 取得蛋的資料
-    fetch('/api/eggs')
+    const apiUrl = import.meta.env.VITE_SOCKET_URL || 'http://localhost:3000';
+    fetch(`${apiUrl}/api/eggs`)
       .then(res => res.json())
       .then(data => {
         if (data.success) {
