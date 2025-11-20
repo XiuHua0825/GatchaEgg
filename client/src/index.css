@@ -13,6 +13,7 @@ body {
 
 #root {
   min-height: 100vh;
+  padding-top: 60px; /* 為頂部跑馬燈預留空間 */
 }
 
 /* 通用容器 */
@@ -110,6 +111,10 @@ h1, h2, h3 {
 
 /* 響應式 */
 @media (max-width: 768px) {
+  #root {
+    padding-top: 50px; /* 移動版跑馬燈高度 */
+  }
+
   .container {
     padding: 10px;
   }
