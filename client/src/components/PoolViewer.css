@@ -135,50 +135,11 @@
   font-size: 1.1rem;
 }
 
-/* 分類區域 */
-.pool-categories {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.pool-category {
-  background: #f8f9fa;
-  border-radius: 12px;
-  padding: 16px;
-  border: 2px solid #e0e0e0;
-}
-
-.category-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 16px;
-  background: white;
-  border-radius: 8px;
-  border-left: 4px solid #667eea;
-  margin-bottom: 16px;
-}
-
-.category-name {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #333;
-}
-
-.category-count {
-  font-size: 0.9rem;
-  color: #666;
-  background: #e0e0e0;
-  padding: 4px 12px;
-  border-radius: 12px;
-}
-
 /* 獎品列表 */
 .items-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* 單個獎品 */
@@ -186,10 +147,10 @@
   background: white;
   border: 2px solid #e0e0e0;
   border-radius: 10px;
-  padding: 12px;
+  padding: 16px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -222,37 +183,33 @@
   font-size: 2rem;
 }
 
-.pool-item-info {
-  flex: 1;
-  min-width: 0;
-}
-
 .pool-item-name {
+  flex: 1;
   font-weight: 700;
   font-size: 1rem;
   color: #333;
-  margin-bottom: 6px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.pool-item-details {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
+  min-width: 0;
 }
 
 .pool-item-value {
   font-size: 0.95rem;
   color: #28a745;
   font-weight: 700;
+  white-space: nowrap;
+  min-width: 100px;
+  text-align: right;
 }
 
 .pool-item-prob {
   font-size: 0.9rem;
   color: #667eea;
   font-weight: 600;
+  white-space: nowrap;
+  min-width: 80px;
+  text-align: right;
 }
 
 /* 大獎指示器 */
@@ -300,12 +257,9 @@
     padding: 16px;
   }
 
-  .items-list {
-    grid-template-columns: 1fr;
-  }
-
   .pool-item {
-    padding: 10px;
+    padding: 12px;
+    gap: 12px;
   }
 
   .pool-item-image {
@@ -317,15 +271,14 @@
     font-size: 0.9rem;
   }
 
-  .pool-item-value,
-  .pool-item-prob {
+  .pool-item-value {
     font-size: 0.85rem;
+    min-width: 80px;
   }
 
-  .category-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+  .pool-item-prob {
+    font-size: 0.85rem;
+    min-width: 70px;
   }
 }
 
