@@ -12,7 +12,7 @@ const pools = JSON.parse(fs.readFileSync(path.join(__dirname, 'pools.json'), 'ut
 // ========== 固定循環池系統 ==========
 
 // 循環池配置
-const POOL_SIZE = 5000; // 每個循環池的大小
+const POOL_SIZE = 20000; // 每個循環池的大小
 
 // 儲存每個獎池的循環池狀態
 // 格式：{ poolName: { items: [], currentIndex: 0 } }
