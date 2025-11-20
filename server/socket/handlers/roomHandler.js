@@ -181,6 +181,19 @@ function startBattle(roomId, room, io, rooms) {
     // 發送對戰結果
     io.to(roomId).emit('battle-result', result);
 
+    // 廣播對戰結果到全服
+    const winnerName = winner === 'player1' ? room.player1.name : winner === 'player2' ? room.player2.name : null;
+    const loserName = winner === 'player1' ? room.player2.name : winner === 'player2' ? room.player1.name : null;
+    
+    if (winnerName && loserName) {
+      io.emit('global-battle-result', {
+        winner: winnerName,
+        loser: loserName,
+        totalValue: player1Total + player2Total,
+        timestamp: Date.now()
+      });
+    }
+
     // 清理房間
     room.status = 'finished';
     setTimeout(() => {
@@ -204,6 +217,7 @@ function checkAndBroadcastJackpots(draws, playerName, eggType, io) {
     io.emit('global-jackpot', {
       playerName,
       itemName: item.name,
+      itemPrice: item.price,
       eggType,
       timestamp: Date.now()
     });

@@ -77,6 +77,7 @@ export function handleSinglePlayEvents(socket, io, playerDrawCounts) {
         io.emit('global-jackpot', {
           playerName,
           itemName: item.name,
+          itemPrice: item.price,
           eggType,
           timestamp: Date.now()
         });
