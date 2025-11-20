@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './GachaResult.css';
 
-function GachaResult({ draws, total, showTotal = true }) {
+function GachaResult({ draws, total, showTotal = true, onFinish }) {
   const [visibleCount, setVisibleCount] = useState(0);
   const [showTotalValue, setShowTotalValue] = useState(false);
 
@@ -29,6 +29,20 @@ function GachaResult({ draws, total, showTotal = true }) {
 
     return () => clearInterval(interval);
   }, [draws]);
+
+  // 當顯示總價值時，通知父元件（只觸發一次）
+  useEffect(() => {
+    if (showTotalValue && typeof onFinish === 'function') {
+      try {
+        onFinish();
+      } catch (e) {
+        // 忽略父層回呼錯誤，不影響顯示
+        console.error('GachaResult onFinish error', e);
+      }
+    }
+    // 我們只想在 showTotalValue 變成 true 時呼叫一次
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showTotalValue]);
 
   if (!draws || draws.length === 0) {
     return <div className="gacha-result-empty">暫無結果</div>;

@@ -24,6 +24,7 @@ function SinglePlay() {
   const [drawCount, setDrawCount] = useState(1);
   const [isDrawing, setIsDrawing] = useState(false);
   const [lastResult, setLastResult] = useState(null);
+  const [pendingRecord, setPendingRecord] = useState(null);
 
   useEffect(() => {
     if (!playerName) {
@@ -37,9 +38,8 @@ function SinglePlay() {
     socket.on('single-result', (data) => {
       setIsDrawing(false);
       setLastResult(data);
-      
-      // 添加到歷史記錄
-      addDrawHistory({
+      // 延後加入歷史，等待結果顯示動畫完成
+      setPendingRecord({
         eggType: selectedEgg,
         draws: data.draws,
         total: data.total
@@ -194,7 +194,16 @@ function SinglePlay() {
             {lastResult && (
               <div className="card result-panel">
                 <h2>本次結果</h2>
-                <GachaResult draws={lastResult.draws} total={lastResult.total} />
+                    <GachaResult
+                      draws={lastResult.draws}
+                      total={lastResult.total}
+                      onFinish={() => {
+                        if (pendingRecord) {
+                          addDrawHistory(pendingRecord);
+                          setPendingRecord(null);
+                        }
+                      }}
+                    />
               </div>
             )}
           </div>

@@ -15,8 +15,8 @@ const renderBroadcastContent = (message) => {
           <div className="broadcast-icon">{typeConfig.icon}</div>
           <div className="broadcast-text">
             <strong>{message.data.playerName}</strong> 抽到了
-            <span className="broadcast-item">{message.data.itemName}</span>！
-            <span className="broadcast-value">${message.data.itemPrice}</span>
+            <span className="broadcast-item">{message.data.itemName}</span>
+            <span className="broadcast-value">${message.data.itemPrice}</span>！
           </div>
         </>
       );

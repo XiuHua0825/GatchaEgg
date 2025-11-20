@@ -58,7 +58,7 @@ function Home() {
     <div className="home-page">
       <div className="container">
         <div className="home-card card">
-          <h1 className="home-title">🎰 多人抽蛋對戰遊戲</h1>
+          <h1 className="home-title">🎰 抽蛋模擬器</h1>
           
           <div className="connection-status">
             {isConnected ? (
@@ -101,7 +101,7 @@ function Home() {
                 disabled={!isConnected}
               >
                 <div className="mode-icon">⚔️</div>
-                <div className="mode-title">對戰模式</div>
+                <div className="mode-title">杯透模式</div>
                 <div className="mode-desc">雙人對決，比拼價值</div>
               </button>
             </div>
